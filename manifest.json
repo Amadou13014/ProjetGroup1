@@ -1,0 +1,37 @@
+{
+
+	"manifest_version": 2,
+	"name": "Borderify",
+	"version": "1.0",
+
+	"description": "Ajoute une bordure rouge pleine sur l'ensemble des pages web mozilla.org.",
+	"homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+
+	"permissions": [
+		"activeTab"
+	],
+	"browser_action": {
+		"default_icon": "icons/icon.png",
+		"default_title": "Beastify",
+		"default_popup": "popup/choose_beast.html"
+	},
+	"browser_action": {
+		"default_icon": "icons/icon1.png",
+		"default_title": "icons/icon2.png",
+		"default_popup": "popup/choose_beast.html"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.mozilla.org/*"],
+
+			"all_frames": true,
+			"js": ["borderify.js"]
+		}
+	]
+
+}
