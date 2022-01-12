@@ -20,11 +20,11 @@
      function beastNameToURL(beastName) {
       switch (beastName) {
         case "Grenouille":
-        return browser.runtime.getURL("icons/icon.png");
+        return browser.runtime.getURL("Icons/icon.png");
         case "Serpent":
-        return browser.runtime.getURL("icons/icon1.png");
+        return browser.runtime.getURL("Icons/icon1.png");
         case "Tortue":
-        return browser.runtime.getURL("icons/icon2.png");
+        return browser.runtime.getURL("Icons/icon2.png");
       }
     }
 
